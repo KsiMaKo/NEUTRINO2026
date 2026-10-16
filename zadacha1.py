@@ -38,7 +38,8 @@ class Detector:
         if dist[best_fmt] <= self.r:
             return int(best_fmt)
         return -1
-
+        
+det = Detector(R=2.0, N=40, r=0.1, a=0.5)
 plot = k3d.plot(name="Детектор")
 
 fmt_mesh = k3d.points(positions=det.fmt_positions.astype(np.float32), point_size=det.r, color=0x000000)
