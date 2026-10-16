@@ -1,3 +1,8 @@
+import numpy as np
+import numpy.random as rnd
+import matplotlib.pyplot as plt
+import k3d
+
 class Source:
     def __init__(self, Y=10000):
         self.Y = Y 
