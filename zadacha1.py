@@ -36,7 +36,7 @@ class Detector:
         
         best_fmt = np.argmin(dist)
         if dist[best_fmt] <= self.r:
-            return int(best_pmt)
+            return int(best_fmt)
         return -1
 
 plot = k3d.plot(name="Детектор")
