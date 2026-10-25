@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import k3d
 
 class Source:
-    def __init__(self, Y=10000):
+    def __init__(self, Y=10000, pos=(0.0, 0.0, 0.0)):
         self.Y = Y 
         self.pos = np.array([0.0, 0.0, 0.0])
       
