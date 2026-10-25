@@ -6,7 +6,7 @@ import k3d
 class Source:
     def __init__(self, Y=10000, pos=(0.0, 0.0, 0.0)):
         self.Y = Y 
-        self.pos = np.array([0.0, 0.0, 0.0])
+        self.pos = np.array([0.0, 0.0, 0.0])#необязательно источник в центре. заранее возможность для такого пропишу
       
     def generate_directions(self, E):
         """
