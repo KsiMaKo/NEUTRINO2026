@@ -60,6 +60,7 @@ class Detector(g4.G4VUserDetectorConstruction):
             rot.rotateZ(float(np.arctan2(unit_p[1], unit_p[0])))
             self.rotations.append(rot)
 
+            rot.invert()
             p_vec = g4.G4ThreeVector(*(pos * 0.99))  # чуть внутри сферы, чтобы фмт поместились
             g4.G4PVPlacement(rot, p_vec, fmt_vol, f"FMT_{k}", sphere_vol, False, k)
 
